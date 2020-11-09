@@ -1,0 +1,308 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PortFolio</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Planet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/move-top.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!--      supp   -->
+<script src="assets/js/ie-emulation-modes-warning.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/js/docs.min.js"></script>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.ico">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('send', 'pageview');
+
+   function{
+	window.open('../images/cv.pdf', '_blank');
+   }
+
+   function download_file(fileURL, fileName) {
+    // for non-IE
+    if (!window.ActiveXObject) {
+        var save = document.createElement('a');
+        save.href = fileURL;
+        save.target = '_blank';
+        var filename = fileURL.substring(fileURL.lastIndexOf('/')+1);
+        save.download = fileName || filename;
+	       if ( navigator.userAgent.toLowerCase().match(/(ipad|iphone|safari)/) && navigator.userAgent.search("Chrome") < 0) {
+				document.location = save.href; 
+// window event not working here
+			}else{
+		        var evt = new MouseEvent('click', {
+		            'view': window,
+		            'bubbles': true,
+		            'cancelable': false
+		        });
+		        save.dispatchEvent(evt);
+		        (window.URL || window.webkitURL).revokeObjectURL(save.href);
+			}	
+    }
+
+    // for IE < 11
+    else if ( !! window.ActiveXObject && document.execCommand)     {
+        var _window = window.open(fileURL, '_blank');
+        _window.document.close();
+        _window.document.execCommand('SaveAs', true, fileName || fileURL)
+        _window.close();
+    }
+}
+
+
+  
+</script>
+
+</head>
+<body>
+		<!--header-->
+			<div class="header">
+				<div class="container">
+					<div class="header-top">
+						<nav class="navbar navbar-default">
+							<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+									  </button>
+									<div class="navbar-brand">
+										<h1><a href="index.html">PortFolio JAA</a></h1>
+									</div>
+								</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							  <ul class="nav navbar-nav">
+									<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							  
+							</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+						</nav>
+
+					</div>
+				</div>
+			</div>
+			<div class="header-banner">
+				<div class="container">
+					<div class="head-banner">
+						<h3>Marrakech</h3><h4>Menara</h4>
+						<p>Morrocan City it's a one of wonderfull city in Morroco.</p>
+					</div>
+					<div class="banner-grids">
+						<div class="col-md-6 banner-grid">
+							 <h4><a id="cv" >Voire Mon C.V EN Francais</a></h4>
+							 <p><a  id="cv"  type="submit" onclick="window.location.href='images/cv.pdf'" > <u>Cliquer Ici Pour Télecharger</u></a></p>
+						</div>
+						<div class="col-md-6 banner-grid">
+						     <h4><a id="cv" >Voire Mon C.V EN Anglais</a></h4>
+							 <p><a  id="cv"  type="submit" onclick="window.location.href='images/cveng.pdf'" > <u>Cliquer Ici Pour Télecharger</u></a></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		<!--header-->
+			<!--welcome-->
+			<div class="content">
+				<div class="welcome">
+					<div class="container">
+						<h2>welcome to My World</h2>
+							<div class="welcome-grids">
+								<div class="col-md-3 welcome-grid">
+									<img src="images/p1.jpg" alt=" " class="img-responsive" />
+									<div class="wel-info">
+										<h4>Photographe</h4>
+										<p>j'ai fair le Montage aussi Filmer des videos et prendre des photos à les ceremonie, Anniversaire et mariages.</p>
+									</div>
+								</div>
+								<div class="col-md-3 welcome-grid">
+									<img src="images/p2.jpg" alt=" " class="img-responsive" />
+									<div class="wel-info">
+										<h4>Art & Music</h4>
+										<p>je suis Passionée par le domaine d'art sur tout la Music Instrument Batteri et le desin, la painture.</p>
+									</div>
+								</div>
+								<div class="col-md-3 welcome-grid">
+									<img src="images/p3.jpg" alt=" " class="img-responsive" />
+									<div class="wel-info">
+										<h4>Tripe & Sport</h4>
+										<p>j'aime pratiqué le Sport exactement le Footing et on plus de faire des piquenique, trip pour defolé et amusée.</p>
+									</div>
+								</div>
+								<div class="col-md-3 welcome-grid">
+									<img src="images/p4.jpg" alt=" " class="img-responsive" />
+									<div class="wel-info">
+										<h4>Lecture</h4>
+										<p>j'aime la recherche et je suis passionée par la lecture au domaine de la recherche Scientifique et culture Generale.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+					</div>
+				</div>
+			<!--welcome-->
+						<!--feature-->
+				<div class="feature">
+					<div class="container">
+						<h3>Our Features</h3>
+						<div class="feature-grids">
+								<div class="col-md-4 feature-grid">
+										<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+										<h4> Mailling</h4>
+										<p>Masagni dolores eoquie unumquam eius.</p>
+									</div>
+									<div class="col-md-4 feature-grid">
+										<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+										<h4>Video Conférence</h4>
+										<p>Masagni adipisci unumquam eius.</p>
+									</div>
+									<div class="col-md-4 feature-grid">
+										<span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+										<h4>Adsence</h4>
+										<p>Masagni consectet, adipisci unumquam eius.</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+					</div>
+				</div>
+				<!--feature-->
+
+			<!--testimonials-->
+			<div class="testimonials">
+				<div class="container">
+					<h3>Ouarzazate</h3>
+					<p><b>La meilleur Ville ou La Perle de Sud ma ville de Naissance Exactement à Tabounte Tarmigte</b></p>
+					<h4><a href="#">Kasbah de Taourirte </a></h4>
+				</div>
+			</div>
+			<!--testimonials-->
+
+						<!--events-->
+							<div class="events">
+								<div class="container">
+									<h3>Track</h3>
+									<div class="events-grids">
+											<div class="col-md-3 event-grid">
+												<a href="#" class="mask">
+												<img src="images/e1.png" class="img-responsive zoom-img" alt=""></a>
+											</div>
+											<div class="col-md-3 event-grid1">
+												<h4>la date de Naissance </h4>
+												<h5>05-Febr-1994</h5>
+												<p>Né en 1994 le 05 février à l'Hopital Sidi Hsaine de Ouarzazate Exactement à 05.00 de matin.</p>
+											</div>
+											<div class="col-md-3 event-grid">
+												<a href="#" class="mask">
+												 <img src="images/e2.jpg" class="img-responsive zoom-img" alt=""></a>
+											</div>
+											<div class="col-md-3 event-grid1">
+												<h4>Premier Scolaire </h4>
+												<h5>25-sep-2001</h5>
+												<p>j'ai debut mon Premier Scolaire a l'ecole TABOUNTE qui ma donné beaucoup de choses</p>
+											</div>
+										<div class="clearfix"></div>
+								</div>
+							</div>
+							</div>
+						<!--events-->
+						<!--specials-->
+				<div class="specials-section">
+					<div class="container">
+						<div class="specials-grids">
+							<div class="col-md-3 specials1">
+								<h3>timings</h3>
+									<p>18:30 Am - 22:45 Am Chatt</p>
+									<p>08:00 Am - 13:00 Am </p>
+									<p>14:30 Am - 18:00 PM </p>
+									<p>Week-end  OFF </p>
+							</div>
+							<div class="col-md-3 specials1">
+								<h3> details</h3>
+								<ul>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="contact.html">SiteMap</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 specials1">
+								<h3>contact</h3>
+								<address>
+									<p>Jaafrane Youness.</p>
+									<p>Tarmigte, Ouarzazate, 45 000.</p>
+									<p>Telephone1 : +212 762 442 995</p>
+									<p>Telephone2 : +212 697 849 741</p>
+									<p>E-mail : <a href="Youness.jaafrane@Outlook.Fr">Youness.jaafrane@Outlook.Fr</a></p>
+								</address>
+							</div>
+							<div class="col-md-3 specials1" >
+								<h3>social</h3>
+								
+									
+									 <a href="#"><img src="images/in.png"  alt=" "  id="social" class="img-responsive " /></a>
+							
+									 <a href="#"><img src="images/fb.png"  alt=" "  id="social" class="img-responsive " /></a> 
+									
+									 <a href="#"><img src="images/twt.png" alt=" "  id="social" class="img-responsive " /></a>
+									
+									 <a href="#"><img src="images/g.png"   alt=" "  id="social" class="img-responsive " /></a>
+								
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-top">
+						<p>&copy; 2020 PortFolio . All rights reserved | Design by <a href=""><b>JAA</b></a></p>
+					</div>
+				</div>
+			</div>
+
+<!-- <div class="bs-customize-download">
+      <button type="submit" id="btn-compile"  class="btn btn-block btn-lg btn-outline" onclick="ga('send', 'event', 'Customize', , 'images/e2.jpg');">Compile and Download</button>
+     </div> -->
+
+	<script type="text/javascript">
+
+
+		$(document).ready(function() {
+			
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!----> 
+
+
+
+
+</body>
+</html>
